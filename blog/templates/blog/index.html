@@ -1,0 +1,9 @@
+{% block content %}
+
+{% for eachpost in postslist %}
+<a href="/blog/{{eachpost.id}}"> {{eachpost.title}} </a> <br>
+{{eachpost.date}} <br>
+<hr>
+{% endfor %}
+
+{% endblock %}
